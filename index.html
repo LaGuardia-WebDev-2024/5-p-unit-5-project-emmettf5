@@ -21,17 +21,104 @@ Select TWO Additional Features to Add
   <title>Why YOU should support your local music scene</title>
   <meta charset="utf-8">
   <style>
-.YOU {color: blueviolet;}
+.YOU {color: rgb(57, 9, 102);}
 .music {
   background-color: azure;
-  display: flex;
+  display: flexbox;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flexbox;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  display: flexbox;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flexbox;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  display: flexbox;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flexbox;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  display: flexbox;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  display: flexbox;
 }
   </style>
 </head>
 <body>
-<h1>Why<bold class="YOU">YOU should support your local music scene</h1>
+<h1>Why<bold class="YOU"> YOU</bold> should support your local music scene</h1>
+  <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://www.rootsworld.com/reviews/slavicsoul.jpg"
+              alt="Avatar"
+              style="width: 200px; height: 200px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Barbes</h1>
+              <p>576 9th St</p>
+              <p>Awesome music here that is incredibly unique and contemporary</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://static01.nyt.com/images/2019/06/19/nyregion/19-summer-newsletter1/merlin_156568848_6ce4e87a-35ba-4afd-9a3b-24b2fe625d11-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+              alt="Avatar"
+              style="width: 200px; height: 200px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Terraza 7</h1>
+              <p>40-19 Gleane St</p>
+              <p>Awesome jam sessions and live music with lots of roots in latin
+                rhythms
+              </p>
+            </div>
+          </div>
+        </div>
+
  
 
 </body>
