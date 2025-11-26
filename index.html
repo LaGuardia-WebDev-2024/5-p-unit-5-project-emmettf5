@@ -18,15 +18,171 @@ Select TWO Additional Features to Add
 <html>
 
 <head>
-  <title>Unit 5 Project</title>
+  <title>Why YOU should support your local music scene</title>
   <meta charset="utf-8">
   <style>
 
+.YOU {color: rgb(255, 255, 255);}
+.music {
+  background-color: azure;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://i.pinimg.com/originals/c6/c1/1d/c6c11d8ba0b9f26caf0a6a8ee3a3e78e.gif);
+  
+}
+h1 {
+  color: aliceblue;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ 
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg); 
+}
+.container {background-color: beige;
+display: flex;
+height: 300px;
+width: 1500px;
+justify-content: center;
+margin: 5%;
+border: 5px, rgb(0, 0, 0);
+padding: 5px;
+}
+.item {
+  background-color: rgb(196, 228, 255);
+  width: 150px;
+  border: 20px;
+  border-radius: 50px;
+  margin: 5px, brown
+
+  
+}
+.text {
+  color: aliceblue;
+}
   </style>
 </head>
 <body>
+<h1>Why<bold class="YOU"> YOU</bold> should support your local music scene</h1>
 
- 
+<h1><span class="item">You should support your local music scene because <a>
+  the shows are cheaper than any other, and your tickets help keep the music <a>
+    coming and thriving. Only YOU can prevent empty concert venues.
+  </a></h1>
+</a></span>
+
+
+<div class="container">
+
+  <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://www.rootsworld.com/reviews/slavicsoul.jpg"
+              alt="Avatar"
+              style="width:300px; height: 300px"
+              class="item"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h4>Barbes</h4>
+              <p>576 9th St</p>
+              <p>Awesome music here that is incredibly unique and contemporary</p>
+            </div>
+          </div>
+        </div>
+
+<span class="item"></span>
+
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://static01.nyt.com/images/2019/06/19/nyregion/19-summer-newsletter1/merlin_156568848_6ce4e87a-35ba-4afd-9a3b-24b2fe625d11-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+              class="item"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h4>Terraza 7</h4>
+              <p>40-19 Gleane St</p>
+              <p>Awesome jam sessions and live music with lots of roots in latin
+                rhythms
+              </p>
+            </div>
+          </div>
+        </div>
+
+<span class="item"></span>
+
+  <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://images.squarespace-cdn.com/content/v1/6070dda62071967aa3d8b467/1618014053187-JVHUY4T83SS6MKSMMR9C/37316426242_031d9fb409_o.jpg?format=2500w"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+              class="item"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h4>Gold Sounds Bar</h4>
+              <p>44 Wilson Ave</p>
+              <p>Crazy venue that hosts many different hardcore bands, certain to have a crazy experience when coming here.
+              </p>
+            </div>
+          </div>
+        </div>
+</div>
+
+
+
+        <h2 class="text">
+  These places stay alive by people showing up and listening to these great mucisians, and many of these places are struggling to keep the music coming.
+  Your support means you not only get to listen to incredible music, new and old, you also get to support local venues to keep bringing great shows to the people of the community. 
+</h2>
 
 </body>
 </html>
